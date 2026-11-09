@@ -32,6 +32,8 @@ if (product) {
       "Content-Type": "multipart/form-data",
       "x-tenant-slug": tenantSlug,
     },
+    // Longer than the backend's worst case (see backend config/anthropic.js), but never endless
+    timeout: 130 * 1000,
   });
 
   return response.data as ChatResponse; // ✅ force correct type

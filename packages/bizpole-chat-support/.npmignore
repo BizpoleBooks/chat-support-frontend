@@ -1,0 +1,14 @@
+src/
+examples/
+node_modules/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+.gitignore
+.npmignore
+tsconfig*.json
+vite.config.ts
+tailwind.config.js
+postcss.config.js
